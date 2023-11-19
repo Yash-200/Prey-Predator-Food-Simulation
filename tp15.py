@@ -452,49 +452,7 @@ class Statistics:
 
         plt.show()
 
-    # def plot(self):
-    #     """
-    #     Plot the statistics over time.
-    #     """
-    #     fig = plt.figure()
-
-    #     ax1 = fig.add_subplot(231, projection='3d')
-    #     ax1.plot_surface(np.array(self.time_steps), np.array(self.prey_counts), np.array(self.predator_counts))
-    #     ax1.set_title('Population Over Time')
-
-    #     ax2 = fig.add_subplot(232, projection='3d')
-    #     ax2.plot_surface(np.array(self.time_steps), np.array(self.prey_reproduction_rate), np.array(self.predator_reproduction_rate))
-    #     ax2.set_title('Reproduction Rate Over Time')
-
-    #     ax3 = fig.add_subplot(233, projection='3d')
-    #     ax3.plot_surface(np.array(self.time_steps), np.array(self.prey_survival_rate), np.array(self.predator_survival_rate))
-    #     ax3.set_title('Survival Rate Over Time')
-
-    #     ax4 = fig.add_subplot(234, projection='3d')
-    #     ax4.plot_surface(np.array(self.time_steps), np.array(self.prey_energy_consumption), np.array(self.predator_energy_consumption))
-    #     ax4.set_title('Energy Consumption Over Time')
-
-    #     ax5 = fig.add_subplot(235, projection='3d')
-    #     ax5.plot_surface(np.array(self.time_steps), np.array(self.predator_prey_ratio))
-    #     ax5.set_title('Predator-Prey Ratio Over Time')
-
-    #     ax6 = fig.add_subplot(236, projection='3d')
-    #     ax6.plot_surface(np.array(self.time_steps), np.array(self.prey_nn_weights), np.array(self.predator_nn_weights))
-    #     ax6.set_title('Neural Network Weights Over Time')
-
-    #     # Reshape the arrays
-    #     time_steps = np.array(self.time_steps).reshape(-1, 1)
-    #     prey_counts = np.array(self.prey_counts).reshape(-1, 1)
-    #     predator_counts = np.array(self.predator_counts).reshape(-1, 1)
-
-    #     # Create a grid for the surface plot
-    #     X, Y = np.meshgrid(time_steps, prey_counts)
-
-    #     # Plot the surface
-    #     ax1.plot_surface(X, Y, predator_counts)
-
-    #     plt.show()                                                                                                
-
+   
 def initialize_pygame():
     """
     Initialize the Pygame library and create the screen and clock objects.
@@ -568,7 +526,7 @@ def main():
                 display_info(screen, generation, preys, predators, foods)  # Display the info
 
                 pygame.display.flip()
-                clock.tick(60)
+                clock.tick()
 
                 statistics.update(generation, step, preys, predators)
 
@@ -590,9 +548,7 @@ def main():
             generation += 1   
             print(generation)                                                                                                                                                                          
 
-            # # Break out of the loop after the desired number of generations
-            # if generation == GENERATIONS - 1:
-            #     break
+
     except SystemExit:
         print("Pygame manually closed")
         statistics.plot()
