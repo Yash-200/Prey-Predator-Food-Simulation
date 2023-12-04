@@ -1,4 +1,4 @@
-#Simulation of Prey-Predator Dynamics with Neural Networks
+##Simulation of Prey-Predator Dynamics with Neural Networks
 This Python project simulates the dynamics between prey and predators using neural networks implemented with TensorFlow and Pygame. It employs a genetic algorithm to evolve the neural networks controlling the behavior of prey and predators in a simulated environment.
 
 #Overview
