@@ -6,7 +6,6 @@ The simulation involves entities existing in a 2D environment where preys (green
 
 # Features
 Entities:
-
 Preys: Green entities that seek food, reproduce, and avoid predators to survive.
 Predators: Blue entities that hunt and consume preys for energy to survive and reproduce.
 Food: Scattered throughout the environment, providing energy to preys on consumption.
@@ -14,15 +13,17 @@ Neural Networks:
 
 # Prey Neural Network: Controls movement based on sensory inputs (rays detecting food and predators).
 Predator Neural Network: Dictates predator behavior based on the presence of preys and food.
-Genetic Algorithm:
-
-Utilizes a genetic algorithm to evolve neural networks over generations, improving survival and reproduction traits.
+Genetic Algorithm:Utilizes a genetic algorithm to evolve neural networks over generations, improving survival and reproduction traits.
 
 # Requirements
 Python 3.x
+
 Pygame
+
 TensorFlow
+
 NumPy
+
 Matplotlib
 
 # Setup and Execution
