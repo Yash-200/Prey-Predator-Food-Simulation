@@ -16,7 +16,7 @@ Predator Neural Network: Dictates predator behavior based on the presence of pre
 Genetic Algorithm:Utilizes a genetic algorithm to evolve neural networks over generations, improving survival and reproduction traits.
 
 # Requirements
-Python 3.11/n
+Python 3.11
 
 Pygame
 
@@ -31,6 +31,7 @@ Install the required dependencies.
 Run the Python script main.py.
 Observe the simulation in the Pygame window.
 The simulation will run for multiple generations, evolving the entities' behaviors.
+
 Usage
 
 main.py: The main script that initializes the simulation environment and executes the simulation loop.
