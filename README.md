@@ -23,6 +23,7 @@ Pygame
 TensorFlow
 
 NumPy
+
 Matplotlib
 
 # Setup and Execution
