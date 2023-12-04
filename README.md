@@ -16,14 +16,13 @@ Predator Neural Network: Dictates predator behavior based on the presence of pre
 Genetic Algorithm:Utilizes a genetic algorithm to evolve neural networks over generations, improving survival and reproduction traits.
 
 # Requirements
-Python 3.x
+Python 3.11/n
 
 Pygame
 
 TensorFlow
 
 NumPy
-
 Matplotlib
 
 # Setup and Execution
