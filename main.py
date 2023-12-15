@@ -53,7 +53,7 @@ def create_neural_network(input_size, output_size):
 prey_nn = create_neural_network(PREY_RAY_COUNT * 2 + 2, 2)  # Two outputs for prey movement
 predator_nn = create_neural_network(PREDATOR_RAY_COUNT * 2 + 2, 2)  # Two outputs for predator movement
 
-# Add comments explaining the purpose and functionality of each section, class, and method
+
 
 class Food:
     """
